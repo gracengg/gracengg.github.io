@@ -1,16 +1,16 @@
- # 🌟 Grace Ngo — Portfolio Website
+ # Grace Ngo — Portfolio Website
 
 Welcome to the repository for my personal portfolio website!  
 This site showcases my projects, skills, and experience in data analytics, programming, and visualization.
 
 ---
 
-## 🚀 Live Website
+## Live Website
 👉 **[gracengg.github.io]([https://gracengg.github.io](https://gracengg.github.io/porfolio/))**  
 
 ---
 
-## 🧩 About
+## About
 This portfolio highlights my technical and analytical expertise through a clean, responsive design built with **HTML**, **CSS**, and **JavaScript**.  
 
 It includes:
@@ -21,7 +21,7 @@ It includes:
 
 ---
 
-## 🛠️ Built With
+## Built With
 - **HTML5** — structure and semantic layout  
 - **CSS3** — modern styling with flexbox and grid  
 - **JavaScript** — for light interactivity  
@@ -29,7 +29,7 @@ It includes:
 
 ---
 
-## ⚙️ Deployment
+## Deployment
 This site is deployed using **GitHub Pages**.
 
 To update your live website:

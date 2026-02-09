@@ -39,11 +39,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
   if (navbar) {
-    if (window.scrollY > 50) {
-      navbar.style.background = "rgba(255, 255, 255, 0.98)";
+    if (window.scrollY > 10) {
+      navbar.style.background = "rgba(15, 23, 42, 0.86)";
       navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.1)";
     } else {
-      navbar.style.background = "rgba(255, 255, 255, 0.95)";
+      navbar.style.background = "rgba(15, 23, 42, 0.86)";
       navbar.style.boxShadow = "none";
     }
   }
@@ -114,13 +114,13 @@ if (contactForm) {
 }
 
 // Typing animation for hero title
-function typeWriter(element, text, speed = 100) {
+function typeWriterHTML(element, html, speed = 100) {
   let i = 0;
   element.innerHTML = "";
 
   function type() {
-    if (i < text.length) {
-      element.innerHTML += text.charAt(i);
+    if (i < html.length) {
+      element.innerHTML = html.slice(0, i + 1);
       i++;
       setTimeout(type, speed);
     }
@@ -132,10 +132,10 @@ function typeWriter(element, text, speed = 100) {
 // Initialize typing animation when page loads
 document.addEventListener("DOMContentLoaded", () => {
   const heroTitle = document.querySelector(".hero-title");
-  if (heroTitle) {
-    const originalText = heroTitle.textContent;
-    typeWriter(heroTitle, originalText, 40);
-  }
+  if (!heroTitle) return;
+
+  const html = `Hi, I'm <span class="highlight">Grace Ngo</span>`;
+  typeWriterHTML(heroTitle, html, 40);
 });
 
 // Add hover effects for project cards

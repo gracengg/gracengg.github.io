@@ -42,7 +42,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(15, 23, 42, 0.86);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-radius: 0; 
@@ -197,13 +197,14 @@ body {
 }
 
 .hero-title {
+  color: white;
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
-.highlight {
+.hero-title span {
   color: #fbbf24;
 }
 
@@ -1544,7 +1545,7 @@ section {
 /* Backdrop-filter fallback */
 @supports not (backdrop-filter: blur(10px)) {
   .navbar {
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(15, 23, 42, 0.95);
   }
 }
 

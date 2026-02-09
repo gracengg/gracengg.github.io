@@ -48,7 +48,7 @@ body {
   border-radius: 0; 
   z-index: 1000;
   padding: 1.2rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .nav-container {
@@ -63,7 +63,7 @@ body {
 .nav-logo a {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fbbf24;
+  color: #e5e7eb;
   text-decoration: none;
 }
 

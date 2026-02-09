@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grace Ngo - Porfolio</title>
+    <meta name="description"
+        content="Grace Ngo's portfolio showcasing expertise in machine learning, data science, and computer science.">
+    <meta name="keywords" content="Grace Ngo, portfolio, machine learning, data science, computer science">
+    <meta property="og:title" content="Grace Ngo - Portfolio">
+    <meta property="og:description"
+        content="Explore Grace Ngo's projects and achievements in computer science and data science.">
+    <meta property="og:image" content="images/profile.jpeg">
+    <meta property="og:url" content="https://gracengg.github.io">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Grace Ngo</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <!-- <a href="#recommendations" class="nav-link">Recommendations</a> -->
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Grace Ngo</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Quantitative Economics & Data Analytics
+                </p>
+                <p class="hero-description">
+                    I work at the intersection of data science, machine learning, and econometrics,
+                    applying quantitative methods to real-world problems in consulting, research,
+                    and institutional analytics. My focus is on transforming complex data into
+                    clear, actionable insights that support strategic, evidence-based decision-making.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" download>View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/gracengg" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gracee-ngo/" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:ngol@dickinson.edu " class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="hero-skills">
+                    <h3>Skills & Technologies</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Qlik</span>
+                    </div>
+                    <div class="skills-tags" style="margin-top: 1rem;">
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Stata</span>
+                        <span class="skill-tag">SPSS</span>
+                        <span class="skill-tag">Qualtrics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="images/profile.jpeg" alt="Profile Picture of Grace Ngo"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIG5vdCBmb3VuZDwvdGV4dD48L3N2Zz4='">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+
+                    <div class="education-image">
+                        <img src="images/dickinson.jpg" alt="Dickinson College Campus"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                    </div>
+
+                    <div class="education-content">
+
+                        <div class="education-info">
+                            <h4>Dickinson College</h4>
+                            <h3>B.S. in Quantitative Economics and Data Analytics</h3>
+
+                            <div class="education-meta">
+                                <span class="education-date"><i class="fas fa-calendar"></i> 2023 - 2027</span>
+                                <span class="education-location"><i class="fas fa-map-marker-alt"></i> Carlisle, PA
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="courses-section">
+                            <h4><i class="fas fa-book-open"></i> Relevant Courses</h4>
+                            <div class="courses-grid">
+
+                                <div class="course-box">
+                                    <span class="course-title">Statistical & Machine Learning</span>
+                                    <span class="course-code">DATA 300</span>
+                                </div>
+                                <div class="course-box">
+                                    <span class="course-title">Data Systems & Data Management</span>
+                                    <span class="course-code">DATA 200</span>
+                                </div>
+                                <div class="course-box">
+                                    <span class="course-title">Data Visualization</span>
+                                    <span class="course-code">DATA 201</span>
+                                </div>
+                                <div class="course-box">
+                                    <span class="course-title">Advanced Probability & Statistics</span>
+                                    <span class="course-code">MATH 325</span>
+                                </div>
+                                <div class="course-box">
+                                    <span class="course-title">Econometrics</span>
+                                    <span class="course-code">ECON 298</span>
+                                </div>  
+                                <div class="course-box">
+                                    <span class="course-title">Principles of Object-Oriented Design</span>
+                                    <span class="course-code">COMP 130</span>
+                                </div>
+                                <div class="course-box">
+                                    <span class="course-title">Philosophy of Data</span>
+                                    <span class="course-code">DATA 198</span>
+                                </div>
+                                <div class="course-box">
+                                    <span class="course-title">Single & Multivariable Calculus</span>
+                                    <span class="course-code">MATH 170 & 171</span>
+                                </div>
+                                <div class="course-box">
+                                    <span class="course-title">Analysis of Psychological Data</span>
+                                    <span class="course-code">PSYC 211</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <!-- <p class="section-subtitle">A timeline of my internship experiences and achievements</p> -->
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h4><i class="fas fa-university"></i> Dickinson College</h4>
+                                <h3>Data Analyst, Intern</h3>
+                                <div class="experience-meta">
+                                    <span class="timeline-date"><i class="fas fa-calendar"></i> Sept 2025 -
+                                        Present</span>
+                                    <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Carlisle,
+                                        PA</span>
+                                </div>
+                                <p>
+                                    Enhanced institutional data integrity and reporting efficiency by cleaning large
+                                    datasets, building analytical tools,
+                                    and delivering data-driven insights for academic and compliance initiatives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-image-card">
+                        <img src="images/university3.jpg" alt="Stock chart on a screen"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-image-card">
+                        <img src="images/KPMG.jpeg" alt="Hands typing on a laptop with a stethoscope"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                    </div>
+
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h4><i class="fas fa-building"></i> KPMG</h4>
+                                <h3>Data Science Analyst, Intern</h3>
+                                <div class="experience-meta">
+                                    <span class="timeline-date"><i class="fas fa-calendar"></i> June 2025 -
+                                        August 2025</span>
+                                    <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Ha Noi,
+                                        Viet Nam
+                                        </span>
+                                </div>
+                                <p>
+                                    Automated financial analysis and built interactive dashboards to help clients
+                                    optimize operations, forecast growth, and
+                                    uncover cost-saving opportunities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h4><i class="fas fa-building"></i> EY Parthenon</h4>
+                                <h3>Data Science Analyst, Intern</h3>
+                                <div class="experience-meta">
+                                    <span class="timeline-date"><i class="fas fa-calendar"></i> June 2024 - August
+                                        2024</span>
+                                    <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Ha Noi, Viet
+                                        Nam</span>
+                                </div>
+                                <p>
+                                    Supported strategy and ESG projects by conducting market and financial analysis,
+                                    benchmarking industry leaders, and
+                                    delivering actionable recommendations to improve client performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-image-card">
+                        <img src="images/EY-Parthenon.png" alt="Data dashboard on a monitor"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG_yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+             <!-- <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="web">Web Development</button> 
+                <button class="filter-btn" data-filter="data">Data Science</button>
+            </div>-->
+            <div class="projects-grid">
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Retail Sales Analysis SQL Project"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/gracengg/Retail_Sales_Project_SQL" class="project-link"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/gracengg/Retail_Sales_Project_SQL" class="project-link"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Retail Sales Analysis SQL Project</h3>
+                        <p>
+                            Designed and executed a SQL-based retail sales analysis project to clean, explore, and
+                            visualize transactional data,
+                            uncovering key insights into customer behavior, sales trends, and category performance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">EDA</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Library Management System"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/gracengg/Library_System_Management" class="project-link"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/gracengg/Library_System_Management" class="project-link"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Library Management System</h3>
+                        <p>
+                            Developed a relational database for a Library Management System using SQL, implementing
+                            table relationships, CRUD
+                            operations, CTAS queries, and analytical reporting to streamline data management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">CRUD</span>
+                            <span class="tech-tag">CTAS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Apple Stock Analysis"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/gracengg/Apple_Stock_Analysis" class="project-link"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/gracengg/Apple_Stock_Analysis" class="project-link"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Apple Stock Analysis</h3>
+                        <p>
+                            Performed data cleaning, statistical aggregation, and visualization in Python to explore
+                            Apple stock performance,
+                            identifying market patterns and weak negative correlations between price and trading volume.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Jupyter Notebook</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications & Research</h2>
+            <div class="publications-content">
+                <div class="publication-category">
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <div class="publication-info">
+                                <h4>The Effects of Emergency and Potential Reciprocity on Helping Behavior</h4>
+                                <p class="publication-authors">Grace Ngo</p>
+                                <p class="publication-venue">Analysis of Psychological Data, 2024</p>
+                                <div class="publication-links">
+                                    <a href="publications/paper1.pdf" class="publication-link"><i
+                                            class="fas fa-file-pdf"></i> PDF</a>
+                                    <!-- <a href="https://doi.org/example1" class="publication-link"><i
+                                            class="fas fa-external-link-alt"></i> DOI</a>
+                                    <a href="https://github.com/gracengo/optimization-code" class="publication-link"><i
+                                            class="fab fa-github"></i> Code</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-info">
+                                <h4>Advancing Data-Driven Energy Decisions at Dickinson College</h4>
+                                <p class="publication-authors">Grace Ngo, Research Collaborator</p>
+                                <p class="publication-venue">Center for Sustainability Education, 2025</p>
+                                <div class="publication-links">
+                                    <a href="publications/paper2.pdf" class="publication-link"><i
+                                            class="fas fa-file-pdf"></i> PDF</a>
+                                    <!-- <a href="https://doi.org/example2" class="publication-link"><i
+                                            class="fas fa-external-link-alt"></i> DOI</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <!-- <section id="recommendations" class="recommendations">
+        <div class="container">
+            <h2 class="section-title">Recommendations</h2>
+            <div class="recommendations-container">
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="author-image">
+                            <img src="images/recommender1.jpg" alt="Dr. Sarah Smith"
+                                onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Dr. Sarah Smith</h4>
+                            <p>Professor of Computer Science, MIT</p>
+                        </div>
+                    </div>
+                    <p class="recommendation-text">
+                        Grace Ngo is an exceptional researcher and developer. Her work on machine learning
+                        optimization algorithms has been groundbreaking. I highly recommend her for any
+                        technical leadership role.
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="author-image">
+                            <img src="images/recommender2.jpg" alt="John Doe"
+                                onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                        </div>
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <p>Senior Software Engineer, Google</p>
+                        </div>
+                    </div>
+                    <p class="recommendation-text">
+                        Working with Grace Ngo was a pleasure. Her technical expertise and collaborative
+                        spirit made her an invaluable team member. She consistently delivered high-quality
+                        solutions under tight deadlines.
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="author-image">
+                            <img src="images/recommender3.jpg" alt="Dr. Michael Johnson"
+                                onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Dr. Michael Johnson</h4>
+                            <p>Research Director, Stanford AI Lab</p>
+                        </div>
+                    </div>
+                    <p class="recommendation-text">
+                        Grace Ngo's research contributions have significantly advanced our understanding
+                        of distributed optimization. Her publications are highly cited and her
+                        mentorship of junior researchers is outstanding.
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="author-image">
+                            <img src="images/recommender1.jpg" alt="Dr. Sarah Smith"
+                                onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZSBub3QgZm91bmQ8L3RleHQ+PC9zdmc+'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Dr. Sarah Smith</h4>
+                            <p>Professor of Computer Science, MIT</p>
+                        </div>
+                    </div>
+                    <p class="recommendation-text">
+                        Grace Ngo is an exceptional researcher and developer. Her work on machine learning
+                        optimization algorithms has been groundbreaking. I highly recommend her for any
+                        technical leadership role.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header-pill">
+                <i class="fas fa-bolt"></i> Let's Connect
+            </div>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a question or want to work together?</p>
+
+            <div class="contact-content">
+                <form class="contact-form" action="https://formspree.io/f/mjkpaqyl" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="ngol@dickinson.edu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message...." rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">ngol@dickinson.edu</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+1 (646) 295-9292</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/gracee-ngo/"><span class="contact-value">Linh
+                                        (Grace) Ngo</span></a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Github</span>
+                                <a href="https://github.com/gracengg"><span class="contact-value">gracengg</span></a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Philadelphia, PA, USA</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Grace Ngo. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/gracengg" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gracee-ngo/" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:ngol@dickinson.edu " class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

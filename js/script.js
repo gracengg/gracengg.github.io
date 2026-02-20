@@ -1,229 +1,93 @@
-// Mobile Navigation Toggle
-const navToggle = document.getElementById("nav-toggle");
-const navMenu = document.getElementById("nav-menu");
-
-if (navToggle && navMenu) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    navToggle.classList.toggle("active");
-    const expanded =
-      navToggle.getAttribute("aria-expanded") === "true" ? "false" : "true";
-    navToggle.setAttribute("aria-expanded", expanded);
-  });
-}
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll(".nav-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    if (navMenu) navMenu.classList.remove("active");
-    if (navToggle) navToggle.classList.remove("active");
-    if (navToggle) navToggle.setAttribute("aria-expanded", "false");
-  });
-});
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
-});
-
-// Navbar background change on scroll
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar");
-  if (navbar) {
-    if (window.scrollY > 10) {
-      navbar.style.background = "rgba(15, 23, 42, 0.86)";
-      navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.1)";
-    } else {
-      navbar.style.background = "rgba(15, 23, 42, 0.86)";
-      navbar.style.boxShadow = "none";
-    }
-  }
-});
-
-// Intersection Observer for animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px",
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = "1";
-      entry.target.style.transform = "translateY(0)";
-    }
-  });
-}, observerOptions);
-
-// Observe elements for animation
 document.addEventListener("DOMContentLoaded", () => {
-  const animatedElements = document.querySelectorAll(
-    ".project-card, .timeline-content, .skill-tag"
-  );
-  animatedElements.forEach((el) => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(30px)";
-    el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-    observer.observe(el);
-  });
-});
+    
+    // --- Mobile Navigation ---
+    const navToggle = document.getElementById("nav-toggle");
+    const navMenu = document.getElementById("nav-menu");
 
-// Contact form handling (client-side validation remains, but now with Formspree action for real submission)
-const contactForm = document.querySelector(".contact-form");
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    // Formspree handles submission, but add extra client-side check
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
-
-    // Simple validation
-    if (!name || !email || !subject || !message) {
-      e.preventDefault();
-      alert("Please fill in all fields.");
-      return;
+    if (navToggle && navMenu) {
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            
+            // Animate Hamburger
+            const bars = navToggle.querySelectorAll('.bar');
+            if (navMenu.classList.contains('active')) {
+                bars[0].style.transform = 'translateY(6px) rotate(45deg)';
+                bars[1].style.opacity = '0';
+                bars[2].style.transform = 'translateY(-6px) rotate(-45deg)';
+            } else {
+                bars[0].style.transform = 'translateY(0) rotate(0)';
+                bars[1].style.opacity = '1';
+                bars[2].style.transform = 'translateY(0) rotate(0)';
+            }
+        });
     }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      e.preventDefault();
-      alert("Please enter a valid email address.");
-      return;
-    }
-
-    // Allow form to submit to Formspree; optional loading state
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = "Sending...";
-    submitBtn.disabled = true;
-
-    // Note: Real submission happens via Formspree; this is just UI feedback
-    // You can remove the setTimeout if using Formspree's success handling
-  });
-}
-
-// Typing animation for hero title
-function typeWriterHTML(element, html, speed = 100) {
-  let i = 0;
-  element.innerHTML = "";
-
-  function type() {
-    if (i < html.length) {
-      element.innerHTML = html.slice(0, i + 1);
-      i++;
-      setTimeout(type, speed);
-    }
-  }
-
-  type();
-}
-
-// Initialize typing animation when page loads
-document.addEventListener("DOMContentLoaded", () => {
-  const heroTitle = document.querySelector(".hero-title");
-  if (!heroTitle) return;
-
-  const html = `Hi, I'm <span class="highlight">Grace Ngo</span>`;
-  typeWriterHTML(heroTitle, html, 40);
-});
-
-// Add hover effects for project cards
-document.addEventListener("DOMContentLoaded", () => {
-  const projectCards = document.querySelectorAll(".project-card");
-  projectCards.forEach((card) => {
-    card.addEventListener("mouseenter", () => {
-      card.style.transform = "translateY(-10px) scale(1.02)";
+    // Close menu on link click
+    document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+            if (navMenu.classList.contains('active')) {
+                navToggle.click(); // Trigger the toggle to close and reset icon
+            }
+        });
     });
 
-    card.addEventListener("mouseleave", () => {
-      card.style.transform = "translateY(0) scale(1)";
-    });
-  });
-});
-
-// Add scroll progress indicator
-function createScrollProgress() {
-  const progressBar = document.createElement("div");
-  progressBar.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 3px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        z-index: 9999;
-        transition: width 0.1s ease;
-    `;
-  document.body.appendChild(progressBar);
-
-  window.addEventListener("scroll", () => {
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-    const height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    progressBar.style.width = scrolled + "%";
-  });
-}
-
-// Initialize scroll progress
-document.addEventListener("DOMContentLoaded", createScrollProgress);
-
-// Project filtering functionality
-document.addEventListener("DOMContentLoaded", () => {
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  const projectCards = document.querySelectorAll(".project-card");
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      // Remove active class from all buttons
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-      // Add active class to clicked button
-      button.classList.add("active");
-
-      const filterValue = button.getAttribute("data-filter");
-
-      projectCards.forEach((card) => {
-        if (
-          filterValue === "all" ||
-          card.getAttribute("data-category") === filterValue
-        ) {
-          card.classList.remove("hidden");
-          card.style.animation = "fadeInUp 0.6s ease-out";
+    // --- Navbar Scroll Effect ---
+    const navbar = document.querySelector(".navbar");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
         } else {
-          card.classList.add("hidden");
+            navbar.classList.remove("scrolled");
         }
-      });
     });
-  });
+
+    // --- Smooth Scrolling ---
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // --- Elegant Scroll Reveal Animations ---
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Stop observing once revealed to keep it clean
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up-element').forEach(el => {
+        revealObserver.observe(el);
+    });
+
+    // --- Form Textarea Auto-resize ---
+    const textarea = document.getElementById('message');
+    if (textarea) {
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    }
 });
-
-// Add smooth reveal animation for project cards
-function revealProjectCards() {
-  const projectCards = document.querySelectorAll(".project-card");
-  projectCards.forEach((card, index) => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(30px)";
-    card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-
-    setTimeout(() => {
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
-    }, 100);
-  });
-}
-
-// Initialize project card animations
-document.addEventListener("DOMContentLoaded", revealProjectCards);

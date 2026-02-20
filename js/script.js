@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".nav-link").forEach((link) => {
         link.addEventListener("click", () => {
             if (navMenu.classList.contains('active')) {
-                navToggle.click(); // Trigger the toggle to close and reset icon
+                navToggle.click(); 
             }
         });
     });

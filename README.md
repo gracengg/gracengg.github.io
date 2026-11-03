@@ -53,4 +53,4 @@ GitHub Pages builds from this repository's configured branch. Publishing here up
 
 ## Independent project source
 
-[New-to-Credit Consumer Risk Analysis](https://github.com/gracengg/portfolio-preview) is maintained as a standalone project, outside this website repository.
+[New-to-Credit Consumer Risk Analysis](https://github.com/gracengg/New_to_Credit_Consumer_Risk_Analysis) is maintained as a standalone project, outside this website repository.

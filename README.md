@@ -1,39 +1,9 @@
- # Grace Ngo — Portfolio Website
+# Grace Ngo — Portfolio Entry Point
 
-Welcome to the repository for my personal portfolio website!  
-This site showcases my projects, skills, and experience in data analytics, programming, and visualization.
+The root homepage redirects to the current portfolio:
 
----
+https://gracengg.github.io/portfolio-preview/
 
-## Live Website
-👉 **[gracengg.github.io]([https://gracengg.github.io](https://gracengg.github.io/porfolio/))**  
+The maintained source is [gracengg/portfolio-preview](https://github.com/gracengg/portfolio-preview). Update that repository for experience, research and project changes. Keeping one content destination avoids two public homepages with conflicting dates and project descriptions.
 
----
-
-## About
-This portfolio highlights my technical and analytical expertise through a clean, responsive design built with **HTML**, **CSS**, and **JavaScript**.  
-
-It includes:
-- 💼 Featured projects  
-- 📊 Technical skills (Python, R, SQL, Power BI, etc.)  
-- 🎓 Coursework and academic background  
-- 📫 Contact and social links  
-
----
-
-## Built With
-- **HTML5** — structure and semantic layout  
-- **CSS3** — modern styling with flexbox and grid  
-- **JavaScript** — for light interactivity  
-- **GitHub Pages** — for free hosting and deployment  
-
----
-
-## Deployment
-This site is deployed using **GitHub Pages**.
-
-To update your live website:
-```bash
-git add .
-git commit -m "Update portfolio"
-git push origin main
+`index.html` provides a timed HTML redirect and a visible fallback link. `js/redirect.js` preserves query strings and section fragments for shared links. The earlier portfolio and its assets remain recoverable in Git history.

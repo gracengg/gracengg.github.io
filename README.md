@@ -23,7 +23,7 @@ This is the canonical source for the public portfolio at https://gracengg.github
 | --- | --- | --- |
 | 1Matrix | Budget availability and procurement controls | Experience summary and Plan–Commitment–Actual Spend framework |
 | Dickinson / CCLA | Institutional reporting and engagement analysis | Experience summary and Power BI prototype brief |
-| New-to-credit | Missing credit information, model comparison and review thresholds | Decision-focused case, Python workflow, demonstration notebook and Tableau template |
+| New-to-credit | Missing credit information, model comparison and review thresholds | Verified source access, executed research notebook, reproduced results, Python workflow and Tableau template |
 | NSDUH | Age-group comparisons and accumulated distress indicators | Three original Power BI report exports and analytical brief |
 | Apple equity risk | Historical performance, drawdowns and macroeconomic context | Case, Python package, six data snapshots, notebook and rebuilt risk tables |
 | IMDb catalogue | Rating aggregation, genre coverage and shortlist sensitivity | Case, SQL package, local importer, notebooks and verification tests |

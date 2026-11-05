@@ -17,23 +17,23 @@ This is the canonical source for the public portfolio at https://gracengg.github
 - `publications/`: public academic PDF attachments.
 - `scripts/check_site.py`: offline checks for HTML structure, labels, local assets and anchors.
 
-## Content and evidence
+## Selected work
 
-| Work | Published evidence | Status |
+| Work | Focus | Published materials |
 | --- | --- | --- |
-| 1Matrix | Experience summary and control-framework description | Design and implementation recommendations; no deployed-system or savings claim |
-| Dickinson / CCLA | Experience summary and prototype scope brief | Supplied CCLA source is intermediate; individual records are not published |
-| New-to-credit | Reviewed code, demonstration notebook and historical evidence audit | Original-data rerun pending; no validated deployment claim |
-| NSDUH | Three original report screenshots and a methodology note | Coursework; descriptive and exploratory, not a validated clinical model |
-| Apple equity risk | Public Python package, six supplied snapshots, executed notebook, tests and rebuilt risk tables | Complete-period historical analysis; no trading or causal claim |
-| IMDb catalogue | Reviewed SQL package, local importer, executed notebooks and sixteen tests | Original database absent; public outputs use fictional verification records |
-| Retail revenue | Public SQL queries, loader, reconciled growth bridge and identity audit | Teaching data; no retention or commercial uplift claim |
-| Campus energy | Edited brief based on the April 20, 2025 fellowship report | Proposal; no adoption or realized savings claim |
-| Credit and hiring ethics | Original course essay PDF | Philosophical argument, not legal guidance or empirical hiring research |
-| Beauty and wages | Research summary | Supporting paper not supplied; no misleading download link |
-| Helping behavior | Original course paper PDF | Hypothetical-scenario experiment and statistical analysis |
+| 1Matrix | Budget availability and procurement controls | Experience summary and Plan–Commitment–Actual Spend framework |
+| Dickinson / CCLA | Institutional reporting and engagement analysis | Experience summary and Power BI prototype brief |
+| New-to-credit | Missing credit information, model comparison and review thresholds | Decision-focused case, Python workflow, demonstration notebook and Tableau template |
+| NSDUH | Age-group comparisons and accumulated distress indicators | Three original Power BI report exports and analytical brief |
+| Apple equity risk | Historical performance, drawdowns and macroeconomic context | Case, Python package, six data snapshots, notebook and rebuilt risk tables |
+| IMDb catalogue | Rating aggregation, genre coverage and shortlist sensitivity | Case, SQL package, local importer, notebooks and verification tests |
+| Retail revenue | Category growth reconciliation and data quality | Case, SQL queries, executable loader and aggregate identity audit |
+| Campus energy | Metering and investment reporting | Proposal brief and phased implementation recommendations |
+| Credit and hiring ethics | Financial history as a proxy in hiring | Original essay PDF |
+| Beauty and wages | Econometric replication and distributional analysis | [Research brief](case-studies/beauty-labor-market.html) and [full 21-page paper](publications/beauty-labor-market.pdf) |
+| Helping behavior | Time pressure, reciprocity and experimental design | Original research paper PDF |
 
-The CCLA workbook and supplied PBIX files are not public downloads. PBIX models may embed records; institutional source files must not be copied into this public repository. Do not present the NSDUH report exports as independently validated population estimates.
+Case studies identify their analytical setting, methods and deliverables. Linked project repositories contain detailed methods and data documentation. Institutional source workbooks remain outside this public repository.
 
 ## Checks
 

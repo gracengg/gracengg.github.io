@@ -27,6 +27,8 @@
 table { width: 100%; border-collapse: collapse; font-size: .95rem; }
 th, td { padding: 1rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
 thead { background: var(--card); }
+caption { text-align: left; margin-bottom: .8rem; color: #4f4d47; font-size: .85rem; }
+.case-section a:not(.btn) { text-decoration: underline; text-underline-offset: .2rem; }
 .proposal-steps { padding-left: 1.4rem; }
 .proposal-steps li { margin-bottom: 1rem; padding-left: .4rem; line-height: 1.8; }
 @media (max-width: 700px) {
@@ -36,3 +38,4 @@ thead { background: var(--card); }
   .case-lede { font-size: 1.05rem; }
   .method-note { padding: 1.2rem; }
 }
+

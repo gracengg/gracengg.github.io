@@ -130,7 +130,7 @@ button, summary { cursor: pointer; }
 .etag { border: 1px solid var(--line); border-radius: 999px; padding: .25rem .65rem; font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
 
 /* 6. Selected work and progressive disclosure */
-.project-row { display: grid; grid-template-columns: 60px minmax(0,1fr) 260px; gap: 2rem; padding-block: 3rem; border-top: 1px solid var(--line-light); align-items: start; }
+.project-row { display: grid; grid-template-columns: 46px minmax(0,1.25fr) minmax(0,1fr); gap: 2rem; padding-block: 3rem; border-top: 1px solid var(--line-light); align-items: start; }
 .proj-num { font: 400 2.4rem / 1 var(--serif); opacity: .8; }
 .project-status { margin-bottom: .8rem; color: #c8c4b9; font-size: .73rem; letter-spacing: .03em; }
 .proj-title { margin-bottom: .85rem; color: var(--cream); font: 400 clamp(1.6rem, 2.5vw, 2.3rem) / 1.12 var(--serif); letter-spacing: -.03em; }
@@ -148,6 +148,10 @@ button, summary { cursor: pointer; }
 .project-aside p { font-size: .8rem; color: #c8c4b9; }
 .project-preview { display: block; overflow: hidden; border: 1px solid var(--line-light); border-radius: 16px; }
 .project-preview img { width: 100%; height: auto; }
+.project-metric { display: grid; gap: .4rem; margin-bottom: 1.4rem; }
+.project-metric strong { color: var(--acid); font: 400 clamp(1.8rem,3vw,2.6rem) / 1.1 var(--serif); letter-spacing: -.02em; }
+.project-metric span { color: #c8c4b9; font-size: .75rem; }
+.supporting-heading { margin-top: 2rem; color: var(--cream); font: 400 1.6rem / 1.2 var(--serif); }
 .case-disclosure { margin-top: 1rem; }
 .case-disclosure summary { width: fit-content; padding-block: .6rem; color: var(--acid); font-size: .8rem; font-weight: 700; }
 .case-disclosure[open] summary { margin-bottom: .6rem; }
@@ -156,12 +160,14 @@ button, summary { cursor: pointer; }
 .detail-box { padding: 16px; border: 1px solid var(--line-light); border-radius: 14px; }
 .detail-box h4 { margin-bottom: .5rem; color: var(--cream); font-size: .8rem; }
 .detail-box p { color: #d0c9bc; font-size: .82rem; line-height: 1.65; }
-.mini-projects { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.2rem; margin-top: 2.8rem; }
+.mini-projects { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; margin-top: 1.5rem; }
 .mini-card { display: flex; flex-direction: column; gap: .7rem; padding: 1.6rem; border: 1px solid var(--line-light); border-radius: 22px; background: #1f1f1a; }
 .mini-card:hover { border-color: var(--acid); }
 .mini-card small { color: var(--acid); font-size: .7rem; }
 .mini-card h3 { color: var(--cream); font: 400 1.25rem / 1.2 var(--serif); }
 .mini-card p { flex-grow: 1; color: #c8c4b9; font-size: .85rem; }
+.mini-metric { color: var(--acid); font: 400 1.9rem / 1.1 var(--serif); }
+.mini-card .detail-grid { grid-template-columns: 1fr; }
 .mini-arrow { color: var(--acid); }
 
 /* 7. Research and writing */
@@ -173,6 +179,7 @@ button, summary { cursor: pointer; }
 .research-author, .research-note { color: #e0b9bf; font-size: .8rem; }
 .research-link { display: inline-flex; align-self: flex-start; align-items: center; flex-wrap: wrap; gap: .5rem; padding-block: .5rem; color: var(--cream); font-size: .8rem; font-weight: 700; border-bottom: 1px solid rgba(255,250,240,.4); }
 .file-type { font-size: .65rem; border: 1px solid; padding: .1rem .35rem; border-radius: 4px; }
+.more-research { margin-top: 1.8rem; }
 
 /* 8. Contact and footer */
 .contact-section { padding-bottom: 80px; }
@@ -244,3 +251,4 @@ button, summary { cursor: pointer; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal-pending { opacity: 1; transform: none; }
 }
+

@@ -39,3 +39,6 @@ caption { text-align: left; margin-bottom: .8rem; color: #4f4d47; font-size: .85
   .method-note { padding: 1.2rem; }
 }
 
+
+
+.report-source summary { padding-block: .8rem; font-size: .95rem; font-weight: 600; text-decoration: underline; text-underline-offset: .25rem; }

@@ -11,7 +11,7 @@
   <meta property="og:title" content="Grace Ngo | Business &amp; Data Analytics" />
   <meta property="og:description" content="SQL analysis, predictive modeling and business intelligence, with reproducible results and clear decision trade-offs." />
   <meta property="og:url" content="https://gracengg.github.io/" />
-  <meta property="og:image" content="https://gracengg.github.io/images/og-preview.jpg" />
+  <meta property="og:image" content="https://gracengg.github.io/images/og-portfolio.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,7 +55,7 @@
       </div>
       <div class="hero-right reveal" style="transition-delay:.18s">
         <div class="profile-ring">
-          <img src="images/Profile.jpeg" alt="Grace Ngo" data-fallback="images/placeholder.svg" />
+          <img src="images/grace-ngo-headshot.jpg" alt="Grace Ngo" width="200" height="200" data-fallback="images/placeholder.svg" />
         </div>
       </div>
     </div>
@@ -143,12 +143,7 @@
 
         <!-- 1Matrix -->
         <article class="exp-item reveal" aria-labelledby="experience-1matrix-company experience-1matrix-role">
-          <div class="exp-img-panel logo-panel">
-            <img src="images/1matrix.png" alt="" loading="lazy" decoding="async" data-fallback="images/placeholder.svg" />
-            <div class="exp-img-overlay" aria-hidden="true">
-              <span class="exp-co-name">1Matrix</span>
-            </div>
-          </div>
+          <div class="exp-name-panel" aria-hidden="true"><span class="exp-panel-name">1Matrix</span><span class="exp-panel-area">Finance &amp; operations</span></div>
           <div class="exp-content">
             <div class="exp-meta">
               <span class="exp-date"><time datetime="2026-06">June 2026</time> &ndash; <time datetime="2026-08">Aug 2026</time></span>
@@ -167,12 +162,7 @@
 
         <!-- Dickinson College -->
         <article class="exp-item reveal" aria-labelledby="experience-dickinson-company experience-dickinson-role">
-          <div class="exp-img-panel">
-            <img src="images/east-college.jpg" alt="" loading="lazy" decoding="async" data-fallback="images/placeholder.svg" />
-            <div class="exp-img-overlay" aria-hidden="true">
-              <span class="exp-co-name">Dickinson</span>
-            </div>
-          </div>
+          <div class="exp-name-panel" aria-hidden="true"><span class="exp-panel-name">Dickinson</span><span class="exp-panel-area">Institutional research</span></div>
           <div class="exp-content">
             <div class="exp-meta">
               <span class="exp-date"><time datetime="2025-09">Sept 2025</time> &ndash; <time datetime="2026-05">May 2026</time></span>
@@ -191,12 +181,7 @@
 
         <!-- KPMG -->
         <article class="exp-item reveal" aria-labelledby="experience-kpmg-company experience-kpmg-role">
-          <div class="exp-img-panel">
-            <img src="images/KPMG.jpeg" alt="" loading="lazy" decoding="async" data-fallback="images/placeholder.svg" />
-            <div class="exp-img-overlay" aria-hidden="true">
-              <span class="exp-co-name">KPMG</span>
-            </div>
-          </div>
+          <div class="exp-name-panel" aria-hidden="true"><span class="exp-panel-name">KPMG</span><span class="exp-panel-area">Financial &amp; operational analysis</span></div>
           <div class="exp-content">
             <div class="exp-meta">
               <span class="exp-date"><time datetime="2025-06">June 2025</time> &ndash; <time datetime="2025-08">Aug 2025</time></span>
@@ -215,12 +200,7 @@
 
         <!-- EY-Parthenon -->
         <article class="exp-item reveal" aria-labelledby="experience-ey-company experience-ey-role">
-          <div class="exp-img-panel">
-            <img src="images/EY-Parthenon.png" alt="" loading="lazy" decoding="async" data-fallback="images/placeholder.svg" />
-            <div class="exp-img-overlay" aria-hidden="true">
-              <span class="exp-co-name">EY&#8209;Parthenon</span>
-            </div>
-          </div>
+          <div class="exp-name-panel" aria-hidden="true"><span class="exp-panel-name">EY-Parthenon</span><span class="exp-panel-area">Business consulting</span></div>
           <div class="exp-content">
             <div class="exp-meta">
               <span class="exp-date"><time datetime="2024-06">June 2024</time> &ndash; <time datetime="2024-08">Aug 2024</time></span>
@@ -250,47 +230,44 @@
         <p class="section-sub-light">Business problems, analytical choices and the work behind each recommendation.</p>
       </div>
 
-      <article class="project-row reveal" aria-labelledby="nsduh-title">
-        <span class="proj-num acid-text" aria-hidden="true">01</span>
+      <div class="featured-projects">
+        <article class="featured-project reveal" aria-labelledby="nsduh-title">
+        <a class="project-preview" href="case-studies/nsduh-dashboard.html" aria-label="Open the three-page NSDUH dashboard case"><img src="images/projects/nsduh-overview.svg" alt="Redrawn comparison of the four high-distress percentages labeled in the NSDUH report." width="1200" height="800" loading="lazy" decoding="async" /></a>
         <div class="proj-main">
           <p class="project-status">Power BI &middot; Survey Analytics</p>
           <h3 class="proj-title" id="nsduh-title">Distress Across Life Stages &mdash; NSDUH</h3>
-          <p class="project-metric"><strong>3 report pages</strong><span>One analytical narrative across 2021&ndash;2024</span></p>
-          <p class="proj-q">How can survey reporting explain differences across age groups and accumulated distress indicators?</p>
-          <p class="proj-desc">Designed a Power BI narrative that moves from age-group trends to population distributions, an indicator heatmap and an exploratory threshold comparison. Each page answers a focused question and adds context to the preceding view.</p>
-          <div class="proj-tags"><span class="ptag">Power BI</span><span class="ptag">Survey Analysis</span><span class="ptag">Data Storytelling</span></div>
+          <p class="project-metric"><strong>48.4%</strong><span>Report&rsquo;s high-distress share for ages 21&ndash;30</span></p>
+          <p class="proj-desc">Built a three-page Power BI narrative connecting age-group trends, accumulated distress indicators and an exploratory threshold comparison. The overview highlights the report&rsquo;s age-group differences with a clear, directly labeled comparison.</p>
+          <div class="proj-tags"><span class="ptag">Power BI</span><span class="ptag">Survey Analysis</span></div>
           <a class="proj-link" href="case-studies/nsduh-dashboard.html">Explore the dashboard <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <a class="project-preview" href="case-studies/nsduh-dashboard.html" aria-label="Open the three-page NSDUH dashboard case"><img src="images/projects/nsduh-stress.png" alt="NSDUH report showing distress trends and age-group comparisons." width="1730" height="970" loading="lazy" decoding="async" /></a>
-      </article>
 
-      <article class="project-row reveal" aria-labelledby="risk-title">
-        <span class="proj-num acid-text" aria-hidden="true">02</span>
+      </article>
+        <article class="featured-project reveal" aria-labelledby="risk-title">
+        <a class="project-preview" href="case-studies/new-to-credit.html" aria-label="Open the credit-risk evaluation case"><img src="images/projects/credit-cover.png" alt="Stacked credit cards, illustrating the consumer-credit research topic." width="1500" height="1000" loading="lazy" decoding="async" /></a>
         <div class="proj-main">
           <p class="project-status">Python &middot; Classification &amp; Model Evaluation</p>
           <h3 class="proj-title" id="risk-title">New-to-Credit Consumer Risk Analysis</h3>
-          <p class="project-metric"><strong>34 of 42</strong><span>Recorded charge-offs identified in the held-out test set</span></p>
-          <p class="proj-q">How should an analyst balance unnecessary review flags against missed charge-offs?</p>
-          <p class="proj-desc">Coauthored a study of 2,000 educational credit profiles. Compared models using a 70/15/15 train&ndash;validation&ndash;test split; the selected XGBoost model achieved test ROC AUC 0.917 and average precision 0.563 versus a 0.140 baseline. Its validation-selected threshold flagged 75 of 300 test profiles, with 81.0% recall and 45.3% precision.</p>
-          <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">scikit-learn</span><span class="ptag">XGBoost</span><span class="ptag">Threshold Analysis</span></div>
+          <p class="project-metric"><strong>34 of 42</strong><span>Test charge-offs identified &middot; 75 of 300 profiles flagged</span></p>
+          <p class="proj-desc">Coauthored a study of 2,000 educational credit profiles. The validation-selected XGBoost model achieved test ROC AUC 0.917 and average precision 0.563 versus a 0.140 baseline, making the trade-off between review volume and missed charge-offs explicit.</p>
+          <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">XGBoost</span></div>
           <a class="proj-link" href="case-studies/new-to-credit.html">Inspect the results &amp; workflow <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <a class="project-preview" href="case-studies/new-to-credit.html" aria-label="Open the credit-risk evaluation case"><img src="images/projects/ntc-test-diagnostics.svg" alt="Credit-risk test diagnostics showing ranking performance and the confusion matrix at the frozen threshold." loading="lazy" decoding="async" /></a>
-      </article>
 
-      <article class="project-row reveal" aria-labelledby="imdb-title">
-        <span class="proj-num acid-text" aria-hidden="true">03</span>
+      </article>
+        <article class="featured-project reveal" aria-labelledby="imdb-title">
+        <a class="project-preview" href="case-studies/imdb-catalogue.html" aria-label="Open the IMDb results and methodology"><img src="images/projects/imdb-cover.png" alt="IMDb title over a blurred film-poster background, illustrating the catalogue-selection research topic." width="728" height="486" loading="lazy" decoding="async" /></a>
         <div class="proj-main">
           <p class="project-status">SQL &middot; SQLite &middot; Python</p>
           <h3 class="proj-title" id="imdb-title">IMDb Catalogue Selection Analysis</h3>
           <p class="project-metric"><strong>90.6% excluded</strong><span>When the vote floor rises from 100 to 10,000</span></p>
-          <p class="proj-q">How does requiring more votes change the coverage and genre mix of a rating-ranked movie shortlist?</p>
-          <p class="proj-desc">Queried 88,601 non-adult movies released in 2000&ndash;2024 using SQL joins, CTEs and window functions. Across four minimum-vote thresholds, Documentary share fell from 12.5% to 2.8% and all 50 baseline shortlist titles were replaced at 10,000 votes. The analysis makes catalogue coverage an explicit part of ranking policy.</p>
-          <div class="proj-tags"><span class="ptag">SQL</span><span class="ptag">Sensitivity Analysis</span><span class="ptag">Catalogue Coverage</span></div>
+          <p class="proj-desc">Analyzed 88,601 movies across four vote thresholds using SQL joins, CTEs and window functions. Documentary share fell from 12.5% to 2.8%, showing how an eligibility rule changes catalogue representation before ranking begins.</p>
+          <div class="proj-tags"><span class="ptag">SQL</span><span class="ptag">Sensitivity Analysis</span></div>
           <a class="proj-link" href="case-studies/imdb-catalogue.html">View the findings, chart &amp; SQL <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <a class="project-preview" href="case-studies/imdb-catalogue.html" aria-label="Open the IMDb results and methodology"><img src="images/projects/imdb-vote-floor-review.svg" alt="IMDb chart showing catalogue retention across four vote thresholds and changes in genre share." loading="lazy" decoding="async" /></a>
+
       </article>
+      </div>
 
       <h3 class="supporting-heading">Further analysis &amp; business applications</h3>
       <div class="mini-projects reveal" aria-label="Further analytical work">
@@ -353,4 +330,5 @@
   <script src="js/script.js" defer></script>
 </body>
 </html>
+
 

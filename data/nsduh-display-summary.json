@@ -1,0 +1,25 @@
+{
+  "source": "Supplied Power BI report export, NSDUH 2021–2024",
+  "source_path": "images/projects/nsduh-stress.png",
+  "measure": "Share classified as high distress in the supplied report",
+  "unit": "percent",
+  "provenance": "Values transcribed from the labeled age-group bars; no raw-data recomputation.",
+  "age_groups": [
+    {
+      "age_group": "15–20",
+      "percent": 32.92
+    },
+    {
+      "age_group": "21–30",
+      "percent": 48.41
+    },
+    {
+      "age_group": "31–45",
+      "percent": 31.47
+    },
+    {
+      "age_group": "46–60",
+      "percent": 18.81
+    }
+  ]
+}

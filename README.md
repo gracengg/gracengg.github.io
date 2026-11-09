@@ -24,7 +24,7 @@ This is the canonical source for the public portfolio at https://gracengg.github
 | 1Matrix | Budget availability and procurement controls | Linked Excel model, dashboard prototype scope and control framework |
 | Dickinson / CCLA | Institutional reporting and engagement analysis | Ten-dashboard suite summary and separate CCLA prototype brief |
 | New-to-credit | Missing credit information, model comparison and review thresholds | Verified source access, executed research notebook, reproduced results, Python workflow and Tableau template |
-| NSDUH | Age-group comparisons and accumulated distress indicators | Three original Power BI report exports and analytical brief |
+| NSDUH | Age-group comparisons and accumulated distress indicators | Redesigned age-group overview, labeled-value JSON, original Power BI exports and analytical brief |
 | Apple equity risk | Historical performance, drawdowns and macroeconomic context | Case, Python package, six data snapshots, notebook and rebuilt risk tables |
 | IMDb catalogue selection | Coverage trade-offs across four vote thresholds on 88,601 movies | Official-data results, aggregate chart, SQL, source fingerprints and reproduction guide |
 | Retail revenue | Category growth reconciliation and data quality | Case, SQL queries, executable loader and aggregate identity audit |
@@ -57,3 +57,12 @@ GitHub Pages builds from this repository's configured branch. Publishing here up
 
 [New-to-Credit Consumer Risk Analysis](https://github.com/gracengg/New_to_Credit_Consumer_Risk_Analysis) is maintained as a standalone project, outside this website repository.
 
+
+
+## Visual assets
+
+Featured cards share a 3:2 cover ratio, equal card structure and visible headline measures. Credit and IMDb covers were supplied for this portfolio; analytical charts remain in the case studies. Experience panels use a consistent typographic company-name treatment. The clean public LinkedIn portrait is stored locally.
+
+The NSDUH overview uses four percentages transcribed from the labels in the original report export. It does not reproduce the underlying survey calculation. Run `python3 scripts/build_nsduh_overview.py` to rebuild the SVG from `data/nsduh-display-summary.json`. The original report exports remain available from the case-study disclosure.
+
+The social preview can be rebuilt with `python3 scripts/build_social_preview.py` after installing Matplotlib; this is an optional asset-generation dependency, not a website runtime dependency.

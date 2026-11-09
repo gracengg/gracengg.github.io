@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">High-distress share by age group</title>
+<desc id="desc">Percentages labeled in the supplied NSDUH report: ages 15–20, 32.92%; 21–30, 48.41%; 31–45, 31.47%; 46–60, 18.81%.</desc>
+<rect width="1200" height="800" fill="#f4f0e6"/>
+<rect width="1200" height="160" fill="#171713"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="64" y="60" font-size="23" letter-spacing="2" fill="#d6c7a1">NSDUH · 2021–2024 REPORT</text>
+<text x="64" y="116" font-size="43" font-weight="700" fill="#fffaf0">High-distress share by age group</text>
+<text x="64" y="218" font-size="25" fill="#4f4d47">Ages 21–30 have the highest share in the displayed comparison.</text>
+<line x1="224.0" y1="264" x2="224.0" y2="646" stroke="#d8d3c8" stroke-width="1"/>
+<text x="224.0" y="683" text-anchor="middle" font-size="22" fill="#66645c">0%</text>
+<line x1="384.0" y1="264" x2="384.0" y2="646" stroke="#d8d3c8" stroke-width="1"/>
+<text x="384.0" y="683" text-anchor="middle" font-size="22" fill="#66645c">10%</text>
+<line x1="544.0" y1="264" x2="544.0" y2="646" stroke="#d8d3c8" stroke-width="1"/>
+<text x="544.0" y="683" text-anchor="middle" font-size="22" fill="#66645c">20%</text>
+<line x1="704.0" y1="264" x2="704.0" y2="646" stroke="#d8d3c8" stroke-width="1"/>
+<text x="704.0" y="683" text-anchor="middle" font-size="22" fill="#66645c">30%</text>
+<line x1="864.0" y1="264" x2="864.0" y2="646" stroke="#d8d3c8" stroke-width="1"/>
+<text x="864.0" y="683" text-anchor="middle" font-size="22" fill="#66645c">40%</text>
+<line x1="1024.0" y1="264" x2="1024.0" y2="646" stroke="#d8d3c8" stroke-width="1"/>
+<text x="1024.0" y="683" text-anchor="middle" font-size="22" fill="#66645c">50%</text>
+<text x="176" y="329" text-anchor="end" font-size="32" fill="#171713">15–20</text>
+<rect x="224" y="294" width="526.72" height="54" rx="3" fill="#8a8981"/>
+<text x="766.72" y="329" font-size="29" font-weight="700" fill="#171713">32.92%</text>
+<text x="176" y="423" text-anchor="end" font-size="32" fill="#171713">21–30</text>
+<rect x="224" y="388" width="774.56" height="54" rx="3" fill="#611f2a"/>
+<text x="1014.56" y="423" font-size="29" font-weight="700" fill="#171713">48.41%</text>
+<text x="176" y="517" text-anchor="end" font-size="32" fill="#171713">31–45</text>
+<rect x="224" y="482" width="503.52" height="54" rx="3" fill="#8a8981"/>
+<text x="743.52" y="517" font-size="29" font-weight="700" fill="#171713">31.47%</text>
+<text x="176" y="611" text-anchor="end" font-size="32" fill="#171713">46–60</text>
+<rect x="224" y="576" width="300.96" height="54" rx="3" fill="#8a8981"/>
+<text x="540.96" y="611" font-size="29" font-weight="700" fill="#171713">18.81%</text>
+<text x="64" y="748" font-size="21" fill="#4f4d47">Source: percentages labeled in the supplied Power BI report.</text>
+<text x="64" y="778" font-size="18" fill="#66645c">Report-defined categories · age-group comparison · descriptive survey analysis</text>
+</g></svg>

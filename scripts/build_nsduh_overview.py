@@ -17,7 +17,7 @@ def main():
         '<rect width="1200" height="800" fill="#f4f0e6"/>',
         '<rect width="1200" height="160" fill="#171713"/>',
         '<g font-family="Arial, Helvetica, sans-serif">',
-        '<text x="64" y="60" font-size="23" letter-spacing="2" fill="#d6c7a1">NSDUH · 2021–2024 REPORT</text>',
+        '<text x="64" y="60" font-size="23" letter-spacing="2" fill="#d9f13a">NSDUH · 2021–2024 REPORT</text>',
         '<text x="64" y="116" font-size="43" font-weight="700" fill="#fffaf0">High-distress share by age group</text>',
         '<text x="64" y="218" font-size="25" fill="#4f4d47">Ages 21–30 have the highest share in the displayed comparison.</text>',
     ]

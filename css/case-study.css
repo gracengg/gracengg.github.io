@@ -42,3 +42,26 @@ caption { text-align: left; margin-bottom: .8rem; color: #4f4d47; font-size: .85
 
 
 .report-source summary { padding-block: .8rem; font-size: .95rem; font-weight: 600; text-decoration: underline; text-underline-offset: .25rem; }
+
+/* Keyboard-accessible exploration of the published IMDb snapshot. */
+.threshold-explorer { padding: clamp(1.3rem, 3vw, 2.4rem); border: 1px solid var(--line); border-top: 4px solid var(--wine); border-radius: 18px; background: var(--cream); }
+.vote-controls { margin-block: 1.5rem; border: 0; min-width: 0; }
+.vote-controls legend { margin-bottom: .7rem; font-size: .82rem; font-weight: 700; }
+.vote-options { display: flex; gap: .6rem; flex-wrap: wrap; }
+.vote-options label { position: relative; cursor: pointer; }
+.vote-options input { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); }
+.vote-options span { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .55rem 1.1rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: var(--paper); font-size: .86rem; font-weight: 700; }
+.vote-options input:checked + span { color: var(--acid); background: var(--ink); border-color: var(--ink); }
+.vote-options input:focus-visible + span { outline: 3px solid var(--wine); outline-offset: 3px; }
+.explorer-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; margin-block: 1.5rem; }
+.explorer-metrics div { padding: 1rem; border: 1px solid var(--line); border-radius: 10px; }
+.explorer-metrics dt { min-height: 2.6em; font-size: .75rem; color: var(--muted); }
+.explorer-metrics dd { margin-top: .35rem; color: var(--wine); font: 400 clamp(1.6rem, 4vw, 2.1rem) / 1.1 var(--serif); }
+.retention-track { height: .65rem; margin-bottom: 1rem; border-radius: 999px; overflow: hidden; background: var(--card); }
+.retention-track span { display: block; height: 100%; background: var(--wine); transition: width .25s ease; }
+.case-section .explorer-summary { font-weight: 600; }
+.case-section .explorer-note { font-size: .82rem; color: var(--muted); }
+@media (max-width: 600px) {
+  .explorer-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+  .explorer-metrics div { padding: .8rem; }
+}

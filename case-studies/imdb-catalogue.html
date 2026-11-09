@@ -7,8 +7,8 @@
   <meta name="description" content="SQL analysis of 88,601 IMDb movies: a 10,000-vote rule excludes 90.6% of the baseline catalogue and changes genre coverage. Results, chart and reproducible code." />
   <link rel="canonical" href="https://gracengg.github.io/case-studies/imdb-catalogue.html" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../css/style.css?v=20261109-visual" />
-  <link rel="stylesheet" href="../css/case-study.css?v=20261109-visual" />
+  <link rel="stylesheet" href="../css/style.css?v=20261109-restore" />
+  <link rel="stylesheet" href="../css/case-study.css?v=20261109-restore" />
 </head>
 <body class="case-page">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -17,6 +17,29 @@
     <header class="case-intro"><p class="eyebrow">SQL / SQLite / Python / Sensitivity Analysis</p><h1>IMDb Catalogue Selection Analysis</h1><p class="case-lede">A minimum-vote rule can make a rating-ranked shortlist look better supported while substantially narrowing the catalogue it represents. I analyzed 88,601 movies to quantify that trade-off and make ranking criteria easier to review.</p></header>
     <dl class="case-facts"><div><dt>Author</dt><dd>Grace Ngo</dd></div><div><dt>Scope</dt><dd>Non-adult movies, 2000&ndash;2024; at least 100 votes</dd></div><div><dt>Source</dt><dd>Official IMDb datasets retrieved 6 November 2026</dd></div></dl>
     <section class="case-section"><h2>The decision: which titles reach the review queue?</h2><p>A catalogue analyst needs a shortlist with enough audience participation to support review, but a high vote threshold may remove less widely rated titles before ranking begins. I asked: <strong>How does requiring more votes change the coverage and genre mix of a rating-ranked movie shortlist?</strong></p><p>I compared four vote floors using a common release window and consistent eligibility rules. The analysis measures the candidate pool, genre representation and top-50 turnover so a reviewer can assess the consequences of a selection rule before adopting it.</p></section>
+    <section id="vote-explorer" class="case-section threshold-explorer" aria-labelledby="explorer-heading" hidden>
+      <p class="eyebrow">Interactive result</p>
+      <h2 id="explorer-heading">Explore the vote rule</h2>
+      <p>Change the minimum vote count to see how the eligible catalogue and genre mix change. These are the published November 2026 snapshot results.</p>
+      <fieldset class="vote-controls"><legend>Minimum cumulative votes per movie</legend><div class="vote-options">
+        <label><input type="radio" name="vote-floor" value="100" /><span>100</span></label>
+        <label><input type="radio" name="vote-floor" value="1000" /><span>1,000</span></label>
+        <label><input type="radio" name="vote-floor" value="10000" checked /><span>10,000</span></label>
+        <label><input type="radio" name="vote-floor" value="100000" /><span>100,000</span></label>
+      </div></fieldset>
+      <dl class="explorer-metrics">
+        <div><dt>Eligible movies</dt><dd id="explorer-titles">8,323</dd></div>
+        <div><dt>Baseline retained</dt><dd id="explorer-retained">9.4%</dd></div>
+        <div><dt>Mean title rating</dt><dd id="explorer-rating">6.449</dd></div>
+        <div><dt>Documentary share</dt><dd id="explorer-documentary">2.8%</dd></div>
+        <div><dt>Action share</dt><dd id="explorer-action">26.2%</dd></div>
+        <div><dt>Baseline top-50 retained</dt><dd id="explorer-shortlist">0 / 50</dd></div>
+      </dl>
+      <div class="retention-track" aria-hidden="true"><span id="explorer-bar"></span></div>
+      <p id="explorer-summary" class="explorer-summary" role="status" aria-live="polite" aria-atomic="true"></p>
+      <p class="explorer-note">Baseline: 88,601 movies with at least 100 votes. Genre memberships overlap. Higher ratings describe a different selected pool.</p>
+      <a class="back-link" href="https://github.com/gracengg/Relational_Database_Analytics_IMDb/blob/main/imdb_analytics/queries/vote_floor_research.sql" target="_blank" rel="noopener noreferrer">Inspect the SQL behind these results &nearr;</a>
+    </section>
     <section class="case-section" aria-labelledby="results-heading"><h2 id="results-heading">Results: higher vote floors reshape the pool</h2><div class="table-scroll" role="region" aria-labelledby="results-heading" tabindex="0"><table><caption>Official IMDb snapshot: non-adult movies released 2000&ndash;2024</caption><thead><tr><th scope="col">Minimum votes</th><th scope="col">Eligible movies</th><th scope="col">Baseline retained</th><th scope="col">Mean title rating</th><th scope="col">Baseline top-50 retained</th></tr></thead><tbody>
       <tr><th scope="row">100</th><td>88,601</td><td>100.0%</td><td>5.789</td><td>50 / 50</td></tr>
       <tr><th scope="row">1,000</th><td>30,977</td><td>35.0%</td><td>6.101</td><td>3 / 50</td></tr>
@@ -32,6 +55,8 @@
     <a class="back-link" href="../index.html#projects">Back to selected work &rarr;</a>
   </main>
   <footer class="site-footer"><div class="wrap footer-inner"><span>&copy; 2026 Grace Ngo</span><a href="mailto:gracengggggg@gmail.com">Get in touch</a></div></footer>
+  <script id="vote-floor-data" type="application/json">{"scope":"Non-adult movies released 2000\u20132024","retrieved_on":"2026-11-06","baseline_titles":88601,"thresholds":[{"votes":100,"titles":88601,"retained":1.0,"mean_rating":5.788880486676223,"documentary_share":0.12526946648457693,"action_share":0.12777508154535502,"top50_retained":50},{"votes":1000,"titles":30977,"retained":0.3496235934131669,"mean_rating":6.101355844658941,"documentary_share":0.07085902443748587,"action_share":0.19001194434580496,"top50_retained":3},{"votes":10000,"titles":8323,"retained":0.0939379916705229,"mean_rating":6.448792502703353,"documentary_share":0.02823501141415355,"action_share":0.26180463775081103,"top50_retained":0},{"votes":100000,"titles":2008,"retained":0.022663401090281147,"mean_rating":6.849352589641434,"documentary_share":0.00199203187250996,"action_share":0.37649402390438247,"top50_retained":0}],"source_csvs":["https://github.com/gracengg/Relational_Database_Analytics_IMDb/blob/7a31e43928eee45267043ebfa7adad7cf3c8f93f/reports/research/threshold_summary.csv","https://github.com/gracengg/Relational_Database_Analytics_IMDb/blob/7a31e43928eee45267043ebfa7adad7cf3c8f93f/reports/research/genre_mix.csv"]}</script>
+  <script src="../js/imdb-explorer.js?v=20261109-restore" defer></script>
   <script src="../js/script.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+{
+  "scope": "Non-adult movies released 2000\u20132024",
+  "retrieved_on": "2026-11-06",
+  "baseline_titles": 88601,
+  "thresholds": [
+    {
+      "votes": 100,
+      "titles": 88601,
+      "retained": 1.0,
+      "mean_rating": 5.788880486676223,
+      "documentary_share": 0.12526946648457693,
+      "action_share": 0.12777508154535502,
+      "top50_retained": 50
+    },
+    {
+      "votes": 1000,
+      "titles": 30977,
+      "retained": 0.3496235934131669,
+      "mean_rating": 6.101355844658941,
+      "documentary_share": 0.07085902443748587,
+      "action_share": 0.19001194434580496,
+      "top50_retained": 3
+    },
+    {
+      "votes": 10000,
+      "titles": 8323,
+      "retained": 0.0939379916705229,
+      "mean_rating": 6.448792502703353,
+      "documentary_share": 0.02823501141415355,
+      "action_share": 0.26180463775081103,
+      "top50_retained": 0
+    },
+    {
+      "votes": 100000,
+      "titles": 2008,
+      "retained": 0.022663401090281147,
+      "mean_rating": 6.849352589641434,
+      "documentary_share": 0.00199203187250996,
+      "action_share": 0.37649402390438247,
+      "top50_retained": 0
+    }
+  ],
+  "source_csvs": [
+    "https://github.com/gracengg/Relational_Database_Analytics_IMDb/blob/7a31e43928eee45267043ebfa7adad7cf3c8f93f/reports/research/threshold_summary.csv",
+    "https://github.com/gracengg/Relational_Database_Analytics_IMDb/blob/7a31e43928eee45267043ebfa7adad7cf3c8f93f/reports/research/genre_mix.csv"
+  ]
+}

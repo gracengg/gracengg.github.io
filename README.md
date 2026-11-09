@@ -61,8 +61,13 @@ GitHub Pages builds from this repository's configured branch. Publishing here up
 
 ## Visual assets
 
-Featured cards share a 3:2 cover ratio, equal card structure and visible headline measures. Credit and IMDb covers were supplied for this portfolio; analytical charts remain in the case studies. Experience panels use a consistent typographic company-name treatment. The clean public LinkedIn portrait is stored locally.
+Featured cards share a 3:2 cover ratio, equal card structure and visible headline measures. Credit and IMDb covers were supplied for this portfolio; analytical charts remain in the case studies. Experience cards use the original alternating image-and-text layout. The original full-size portrait is displayed at up to 400px on desktop.
 
 The NSDUH overview uses four percentages transcribed from the labels in the original report export. It does not reproduce the underlying survey calculation. Run `python3 scripts/build_nsduh_overview.py` to rebuild the SVG from `data/nsduh-display-summary.json`. The original report exports remain available from the case-study disclosure.
 
-The social preview can be rebuilt with `python3 scripts/build_social_preview.py` after installing Matplotlib; this is an optional asset-generation dependency, not a website runtime dependency.
+
+## Interactive evidence
+
+The IMDb case includes a keyboard-accessible vote-floor explorer. Its six displayed measures come from the project's published threshold and genre aggregates, stored in `data/imdb-vote-floors.json` and embedded in the case for offline operation. The full results table remains available without JavaScript. Shared styles use versioned URLs to keep cached pages aligned with the current design.
+
+After updating the explorer data, run `python3 scripts/sync_imdb_explorer.py` to update the embedded copy. Its source CSV links are pinned to the published research commit.

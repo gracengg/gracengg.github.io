@@ -3,30 +3,92 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Institutional Reporting &amp; Alumni Engagement | Grace Ngo</title>
-  <meta name="description" content="A Power BI reporting-design brief connecting CCLA engagement with academic outcomes, access and geography." />
+  <title>CCLA Engagement &amp; Program Reporting | Grace Ngo</title>
+  <meta name="description" content="How I used Power Query and Power BI to connect CCLA program participation with academic, cohort and access context at Dickinson College." />
+  <meta property="og:title" content="CCLA Engagement &amp; Program Reporting | Grace Ngo" />
+  <meta property="og:description" content="From student records to a connected view of program reach, academic pathways and reporting coverage." />
   <link rel="canonical" href="https://gracengg.github.io/case-studies/institutional-analytics.html" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css?v=20261109-restore" />
   <link rel="stylesheet" href="../css/case-study.css?v=20261109-restore" />
+  <link rel="stylesheet" href="../css/ccla-case.css?v=20261110" />
 </head>
-<body class="case-page">
+<body class="case-page ccla-case">
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="case-header"><div class="wrap"><a class="nav-brand" href="../index.html">Grace Ngo</a><a class="back-link" href="../index.html#projects">Back to selected work <span aria-hidden="true">&nearr;</span></a></div></header>
+  <header class="case-header"><div class="wrap"><a class="nav-brand" href="../index.html">Grace Ngo</a><a class="back-link" href="../index.html#projects">Back to selected work</a></div></header>
   <main id="main-content" class="wrap case-main">
-    <header class="case-intro"><p class="eyebrow">Dickinson College / Institutional Analytics / Power BI</p><h1>Institutional Reporting &amp; Alumni Engagement</h1><p class="case-lede">A CCLA reporting prototype designed to connect community-engagement participation with academic outcomes, access and geography.</p></header>
-    
-    <dl class="case-facts"><div><dt>Context</dt><dd>Institutional analytics internship</dd></div><div><dt>Tools</dt><dd>Excel, SQL and Power BI</dd></div><div><dt>Deliverable</dt><dd>CCLA reporting prototype and analytical scope brief</dd></div></dl>
-    <section class="case-section"><h2>The reporting problem</h2><p>Engagement records become more useful when they can be related to consistent academic, cohort and geographic definitions. A report must make those relationships understandable while preserving the privacy of individual alumni.</p></section>
-    <section class="case-section"><h2>A connected view of engagement</h2><div class="brief-grid"><article><h3>Engagement</h3><p>Participation and recognition across several community-engagement activities.</p></article><article><h3>Academic context</h3><p>Graduation cohorts, fields of study and academic outcomes.</p></article><article><h3>Access and geography</h3><p>Context for comparing participation across relevant institutional groups and locations.</p></article></div></section>
-    <section class="case-section"><h2>My broader internship contribution</h2><p>My Dickinson work included cleaning, reconciling and validating 15,000+ records spanning 10+ years in SQL and Excel, building a 10-dashboard Power BI reporting suite, benchmarking 30+ peer institutions and analyzing Qualtrics survey responses. The CCLA prototype applies that reporting approach to a focused engagement question: how participation can be understood alongside academic and geographic context.</p></section>
-    <section class="case-section"><h2>Value for institutional reporting</h2><p>The design brings participation, cohort and academic context into a common reporting structure. It gives institutional teams a clearer basis for choosing comparison groups, reviewing coverage and discussing engagement patterns.</p><p>This public brief presents the reporting design and prototype scope. Institutional records remain within the institution.</p></section>
-
+    <header class="case-intro">
+      <p class="eyebrow">Dickinson College / Business Intelligence / Power BI</p>
+      <h1>CCLA Engagement &amp; Program Reporting</h1>
+      <p class="case-lede">I built a multi-page Power BI report to bring community-engagement participation, academic profiles and access indicators into a connected reporting workflow.</p>
+    </header>
+    <dl class="case-facts">
+      <div><dt>My contribution</dt><dd>Data preparation, reshaping, measures and report design</dd></div>
+      <div><dt>Tools</dt><dd>Power Query, DAX and Power BI</dd></div>
+      <div><dt>Analytical focus</dt><dd>Program reach, cohort profiles and data coverage</dd></div>
+    </dl>
+    <section class="case-section">
+      <h2>Who CCLA serves</h2>
+      <p>Dickinson College&rsquo;s <strong>Center for Civic Learning &amp; Action (CCLA)</strong> connects civic learning with community engagement. It works with students, faculty, staff and community partners to develop civic leadership and support communities.</p>
+      <p>The retained report covers six engagement categories: Bonner Program, Montgomery Service Leaders (MSL), Community Engagement Fellows (CEF), CCLA student employment, engagement recognition and service trips. One student can appear in several categories, so program memberships and unique students answer different questions.</p>
+      <p class="ccla-source">Organization context: <a href="https://www.dickinson.edu/ccla" target="_blank" rel="noopener noreferrer">Dickinson&rsquo;s CCLA overview</a> and <a href="https://www.dickinson.edu/homepage/1351/about" target="_blank" rel="noopener noreferrer">mission and approach</a>.</p>
+    </section>
+    <section class="case-section">
+      <h2>The reporting question</h2>
+      <p class="ccla-question">Who do CCLA programs reach, and how can staff compare participation alongside academic and cohort context?</p>
+      <p>The source records store several programs, majors and minors across columns. A usable report needs to preserve those overlapping relationships, keep student counts distinct from activity counts, and make the comparison group clear when a reader changes a filter.</p>
+    </section>
+    <figure class="ccla-blueprint" aria-labelledby="blueprint-title blueprint-caption">
+      <div class="ccla-blueprint-top"><span class="eyebrow">Reporting architecture</span><span class="ccla-structure-label">Public reconstruction &middot; no student data</span></div>
+      <h2 id="blueprint-title">One reporting workflow.<br />Three ways to understand engagement.</h2>
+      <div class="ccla-flow" aria-label="Source records are prepared in Power Query and connected to Power BI report views">
+        <div><span>01 / Prepare</span><strong>Source records</strong><p>Typed fields and cleaned reporting inputs</p></div>
+        <div><span>02 / Reshape</span><strong>Students &amp; memberships</strong><p>Separate academic and program relationships</p></div>
+        <div><span>03 / Explore</span><strong>Power BI report</strong><p>Cohort filters and program detail views</p></div>
+      </div>
+      <div class="ccla-view-grid">
+        <div><span class="ccla-view-number">01</span><h3>Program reach</h3><p>Participation across six engagement categories</p></div>
+        <div><span class="ccla-view-number">02</span><h3>Academic profile</h3><p>Recorded GPA, majors, minors and graduation cohorts</p></div>
+        <div><span class="ccla-view-number">03</span><h3>Access &amp; geography</h3><p>Recorded background, location and field coverage</p></div>
+      </div>
+      <figcaption id="blueprint-caption">Architecture reconstructed from my retained development copy. The institutional final report and confidential student results are not reproduced here.</figcaption>
+    </figure>
+    <section class="case-section">
+      <h2>What I built</h2>
+      <div class="brief-grid">
+        <article><h3>Prepared the source</h3><p>Used Power Query to remove blank rows, assign data types, standardize selected labels and derive academic-pathway fields.</p></article>
+        <article><h3>Reshaped the relationships</h3><p>Unpivoted major, minor and program fields into separate tables so multiple qualifications and memberships could be analyzed.</p></article>
+        <article><h3>Designed the report</h3><p>Built overview, academic, access and program-detail views with DAX summaries and slicers for cohort, major and recorded access indicators.</p></article>
+      </div>
+    </section>
+    <section class="case-section">
+      <h2>How the analysis supports CCLA</h2>
+      <div class="table-scroll"><table>
+        <caption>Reporting questions and the decisions they are designed to inform</caption>
+        <thead><tr><th scope="col">Stakeholder question</th><th scope="col">Analytical approach</th><th scope="col">Practical use</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Which programs reach the most students?</th><td>Compare unique participants within each program while retaining overlapping memberships.</td><td>Describe the engagement portfolio and focus program-review discussions.</td></tr>
+          <tr><th scope="row">Which cohorts and academic pathways are represented?</th><td>Filter by recorded graduation year and examine majors, minors and GPA with the relevant record coverage.</td><td>Prepare cohort-specific summaries for staff and leadership.</td></tr>
+          <tr><th scope="row">Where is participation information incomplete?</th><td>Distinguish recorded Yes, No and unknown values before calculating proportions.</td><td>Target follow-up data collection and improve the reliability of future reporting.</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+    <section class="case-section">
+      <h2>The measurement choices behind a credible report</h2>
+      <p>In reviewing the retained copy, I focused on three definitions that determine whether the report can be interpreted correctly.</p>
+      <div class="ccla-definitions">
+        <details><summary>Count students separately from memberships</summary><p>A student can participate in several programs. Student-level indicators need a unique-person denominator; program reach needs a distinct count within each selected program. Adding the program bars does not produce the size of the student population.</p></details>
+        <details><summary>Show the proportion and its coverage</summary><p>A participation proportion should count affirmative responses rather than every populated flag. Where some records are unknown, the known-response denominator and the share of records covered belong alongside the percentage.</p></details>
+        <details><summary>Keep status descriptions separate from program impact</summary><p>Recorded graduate, current-student and withdrawal statuses describe the retained snapshot. A program-performance claim would require comparable cohorts and time-defined outcomes. Here, the report supports descriptive program review.</p></details>
+      </div>
+    </section>
+    <section class="case-section method-note">
+      <h2>Part of a broader institutional analytics role</h2>
+      <p>My wider Dickinson internship included cleaning and reconciling 15,000+ records in SQL and Excel, developing a separate 10-dashboard Power BI reporting suite, benchmarking 30+ peer institutions and analyzing Qualtrics survey responses. This CCLA case focuses specifically on engagement reporting and the development copy available for review.</p>
+    </section>
     <a class="btn btn-dark" href="../index.html#projects">Back to selected work</a>
   </main>
   <footer class="site-footer"><div class="wrap footer-inner"><span>&copy; 2026 Grace Ngo</span><a href="mailto:gracengggggg@gmail.com">Get in touch</a></div></footer>
   <script src="../js/script.js" defer></script>
 </body>
 </html>
-
-
